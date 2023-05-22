@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 # Monting-Storyblok
-=======
+
 <div align="center">
 	<h1 align="center">@Jpkha/nextjs13-storyblok
 </h1>
@@ -371,4 +370,4 @@ export default async function exit(req, res) {
 
 - Bugs or Feature Requests? [Submit an issue](/../../issues/new);
 - Do you have questions about Storyblok or you need help? [Join the Storyblok Discord Community](https://discord.gg/jKrbAMz).
->>>>>>> 34112652181e2fd9c160f82246ffcad23d62fb44
+  > > > > > > > 34112652181e2fd9c160f82246ffcad23d62fb44
