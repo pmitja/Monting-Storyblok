@@ -2,7 +2,6 @@ import { StoryblokComponent } from '../../components/StoryblokComponent'
 import { getLinks, getStory } from '../../utils/storyblok'
 import StoryblokBridge from '../../components/StoryblokBridge'
 import { draftMode } from 'next/headers'
-import Navigation from '../../components/navigation/Navigation'
 
 interface Paths {
   slug: string[]
@@ -31,21 +30,13 @@ async function fetchData(params: Paths) {
   }
 }
 
-async function fetchNavbar() {
-  const config = await getStory('config')
-  return {
-    config: config ?? false,
-  }
-}
-
 export default async function Page({ params }: { params: Paths }) {
   const { story } = await fetchData(params)
-  const { config } = await fetchNavbar()
   const version = process.env.NEXT_PUBLIC_STORYBLOK_VERSION
   const { isEnabled } = draftMode()
+  console.log(story)
   return (
     <main>
-      <Navigation blok={config.content} />
       {isEnabled || version === 'draft' ? (
         <StoryblokBridge blok={story.content} />
       ) : (
