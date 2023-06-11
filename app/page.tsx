@@ -15,7 +15,7 @@ export default async function Home() {
   const { isEnabled } = draftMode()
   const version = process.env.NEXT_PUBLIC_STORYBLOK_VERSION
   return (
-    <main className="h-screen w-screen bg-gray-100">
+    <main className="h-screen w-screen overflow-x-hidden bg-gray-100">
       {isEnabled || version === 'draft' ? (
         <StoryblokBridge blok={story.content} />
       ) : (
