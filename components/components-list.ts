@@ -6,6 +6,7 @@ import { FunctionComponent } from 'react'
 import { BlokComponentModel } from '../models/blok-component.model'
 import Hero from './hero/Hero'
 import Companies from './companies/Companies'
+import About from './about/About'
 
 interface ComponentsMapProps {
   [key: string]: FunctionComponent<BlokComponentModel<any>>
