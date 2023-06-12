@@ -14,7 +14,7 @@ interface HeroProps extends SbBlokData {
 const Hero: FunctionComponent<BlokComponentModel<HeroProps>> = ({ blok }) => {
   return (
     <div {...storyblokEditable(blok)}>
-      <div className="relative mx-auto flex max-w-screen-2xl flex-col-reverse py-16 lg:flex-col lg:pb-0 lg:pt-0">
+      <div className="relative mx-auto mt-2 flex max-w-screen-2xl flex-col-reverse py-16 lg:flex-col lg:pb-0 lg:pt-0">
         <div className="inset-y-0 right-0 top-0 z-0 mx-auto w-full max-w-xl px-4 md:px-0 lg:absolute lg:mx-0 lg:mb-0 lg:w-7/12 lg:max-w-full lg:pr-0 xl:px-0">
           <svg
             className="absolute left-0 hidden h-full -translate-x-1/2 transform  text-gray-100 lg:block"
